@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700;800&display=swap");
+
+:root {
+  --ff-primary: "Outfit";
+  --ff-secondary: "sans-serif";
+
+  --fs-p: 16px;
+
+  --fw-small: 400;
+  --fw-large: 700;
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+
+  --desktop-size: 1440px;
+  --mobile-size: 375px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/*  Css starts from here */
+
+body {
+  background-color: var(--color-gray);
+}
+
+.card-container {
+  font-family: var(--ff-primary);
+  height: 95vh;
+  max-width: 1440px;
+  /* border: 5px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 320px;
+  /* border: 1px solid blue; */
+  padding: 1.2rem;
+  background-color: var(--color-white);
+  border-radius: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card--img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card--heading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
+  font-weight: 700;
+  color: var(--color-dark-blue);
+}
+
+.card--content {
+  font-size: var(--fs-p);
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+  color: var(--color-grayish-blue);
+}
+
+/* About me Section */
+
+.about {
+  font-family: var(--ff-primary);
+  font-size: 0.7rem;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: var(--color-white);
+}
+
+.username {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
